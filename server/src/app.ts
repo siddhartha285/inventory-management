@@ -13,7 +13,7 @@ app.use(morgan('dev'));
 app.use(cors({ origin: ['http://localhost:5173', 'https://inventory-management-dper.vercel.app'] }));
 
 // application routes
-app.use('/api/v1', rootRouter);
+app.use('/', rootRouter);
 
 app.use(globalErrorHandler);
 
